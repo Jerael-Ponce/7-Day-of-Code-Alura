@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Day of Code D1</title>
+    <link rel="stylesheet" href="../styles/styleDay1.css">
+</head>
+<body>
+    <header class="header"> 
+        <nav class="nav">
+            <a href="Home.html">Inicio</a>
+            <a href="day1.html">Day 1</a>
+            <a href="day2.html">Day 2</a>
+            <a href="day3.html">Day 3</a>
+            <a href="day4.html">Day 4</a>
+            <a href="day5.html">Day 5</a>
+            <a href="day6.html">Day 6</a>
+            <a href="day7.html">Day 7</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1 class="title">1er Reto "7 Days of Code"</h1>
+        <p class="subtitle">El objetivo de este reto es observar cómo las comparaciones entre diferentes tipos de variables parecen ser equivalentes para JS.</p>
+
+        <section class="variables-info">
+            <p class="descripcion">Dadas las variables:</p>
+            <ul class="variable-list">
+                <li>let numeroUn = 1;</li>
+                <li>let stringUn = '1';</li>
+                <li>let numeroTreinta = 30;</li>
+                <li>let stringTreinta = '30';</li>
+                <li>let numeroDiez = 10;</li>
+                <li>let stringDiez = '10';</li>
+            </ul>
+        </section>
+    
+        <div class="comparaciones">
+            <div class="comparison-box">
+                <h2 class="subtitulo">Comparación 1</h2>
+                <p class="texto">Comparar <code>numeroUn</code> y <code>stringUn</code> con "=="</p>
+                <button class="boton" onclick="compararUno()">Comparar</button>
+                <div class="result" id="resultado1"></div>
+            </div>
+    
+            <div class="comparison-box">
+                <h2 class="subtitulo">Comparación 2</h2>
+                <p class="texto">Comparar <code>numeroTreinta</code> y <code>stringTreinta</code> con "==="</p>
+                <button class="boton" onclick="compararTreinta()">Comparar</button>
+                <div class="result" id="resultado2"></div>
+            </div>
+    
+            <div class="comparison-box">
+                <h2 class="subtitulo">Comparación 3</h2>
+                <p class="texto">Comparar <code>numeroDiez</code> y <code>stringDiez</code></p>
+                <button class="boton" onclick="compararDiez()">Comparar</button>
+                <div class="result" id="resultado3"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Estilo inspirado en Tron - Diseño Neón</p>
+    </footer>
+
+    <script src="../scripts/scriptDay1.js"></script>
+</body>
+</html>
