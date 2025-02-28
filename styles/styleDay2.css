@@ -1,0 +1,146 @@
+/* Variables globales */
+:root {
+    --color-fondo: #121212;
+    --color-texto: #f1f1f1;
+    --color-enlace: #f28500;
+    --color-enlace-hover: #ffad33;
+    --color-btn: #ff80e0;
+    --color-btn-hover: #ff40b3;
+    --color-borde: #ff6347;
+    --color-gradiente: linear-gradient(45deg, #ffb6c1, #ff6347);
+    --color-alert-bg: #ff6347; /* Fondo del alert */
+    --color-alert-text: #fff; /* Color del texto del alert */
+    --color-secondary: #ff80e0; /* Color secundario para bordes del alert */
+    --fuente-principal: 'Press Start 2P', cursive;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del header */
+.header {
+    background-color: #222;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--color-enlace);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--color-enlace-hover);
+}
+
+/* Estilo de los elementos en el main */
+.main {
+    padding: 20px;
+}
+
+.title {
+    font-size: 32px;
+    margin: 20px 0;
+    color: var(--color-enlace);
+}
+
+.description {
+    font-size: 18px;
+    color: var(--color-texto);
+}
+
+/* Estilo del formulario */
+.form {
+    background: var(--color-gradiente);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-input,
+.form-select {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--color-borde);
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-input:focus,
+.form-select:focus {
+    width: 90%;
+    outline: none;
+    border-color: var(--color-enlace);
+}
+
+/* Estilo del botón */
+.btn {
+    background-color: var(--color-btn);
+    color: var(--color-texto);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-btn-hover);
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #222;
+    color: var(--color-texto);
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.alert-style {
+    background-color: var(--color-alert-bg) !important;
+    color: var(--color-alert-text) !important;
+    font-family: var(--fuente-principal) !important;
+    border: 2px solid var(--color-secondary) !important;
+    border-radius: 10px !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+}
