@@ -1,0 +1,78 @@
+/* Variables de colores steampunk */
+:root {
+    --fondo: #2c1d15;
+    --color-texto: #d4af7a;
+    --color-enlace: #a67c52;
+    --color-hover: #c4a484;
+    --borde: #6b4f3d;
+    --sombra: rgba(0, 0, 0, 0.6);
+}
+
+/* Estilos generales */
+.body {
+    background-color: var(--fondo);
+    color: var(--color-texto);
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+}
+
+/* Estilo del header y navegación */
+.header {
+    background: var(--borde);
+    padding: 15px;
+    box-shadow: 0 4px 10px var(--sombra);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--color-enlace);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid var(--color-enlace);
+    border-radius: 5px;
+    background: radial-gradient(circle, rgba(166,124,82,0.2) 0%, rgba(44,29,21,1) 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--color-hover);
+    background-color: var(--borde);
+    border-color: var(--color-hover);
+}
+
+/* Estilo del contenido principal */
+.main {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 28px;
+    text-shadow: 2px 2px 5px var(--sombra);
+}
+
+/* Estilo del footer */
+.footer {
+    background: var(--borde);
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px var(--sombra);
+    border-top: 2px solid var(--color-hover);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer_texto{
+    margin: 0;
+    color: var(--color-texto);
+    font-weight: bold;
+}
