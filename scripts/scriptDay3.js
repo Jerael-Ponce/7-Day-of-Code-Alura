@@ -46,55 +46,81 @@ const nivelTres=[
     "Modificas el algoritmo de toma de decisiones para que priorice a niños, personas mayores y personas con discapacidad en situaciones de rescate. Los robots de rescate salvan miles de vidas y son aclamados como un avance humanitario.",
     "Decides no imponer restricciones éticas al algoritmo, permitiendo que tome decisiones basadas únicamente en la eficiencia y la probabilidad de éxito.  Los robots son extremadamente eficientes, pero un incidente en el que el algoritmo decide no salvar a una persona genera controversia"
 ]
- 
+ var estado =0;
 function botonSeleccion(eleccion){
-    if (eleccion==primerEelccion[0]){//Primera vez que se elige algo
-        agregarDiv(nivelUno[0],segundaEleccion[0],segundaEleccion[1])
-    }else if(eleccion==primerEelccion[1]){
-        agregarDiv(nivelUno[1],segundaEleccion[2],segundaEleccion[3])
-    }else if(eleccion==primerEelccion[2]){
-        agregarDiv(nivelUno[2],segundaEleccion[3],segundaEleccion[4])
+    if (estado==0){
+        if (eleccion==primerEelccion[0]){//Primera vez que se elige algo
+            agregarDiv(nivelUno[0],segundaEleccion[0],segundaEleccion[1]);
+            estado +=1;
+        }else if(eleccion==primerEelccion[1]){
+            agregarDiv(nivelUno[1],segundaEleccion[2],segundaEleccion[3]);
+            estado +=1;
+        }else if(eleccion==primerEelccion[2]){
+            agregarDiv(nivelUno[2],segundaEleccion[3],segundaEleccion[4]);
+            estado +=1;
+        }
     }
     
-    
-    else if(eleccion==segundaEleccion[0]){//segunda vez qeu se elige algo
-        agregarDiv(nivelDos[0],terceraEleccion[0],terceraEleccion[1])
-    }else if(eleccion==segundaEleccion[1]){
-        agregarDiv(nivelDos[1],terceraEleccion[2],terceraEleccion[3])
-    }else if(eleccion==segundaEleccion[2]){
-        agregarDiv(nivelDos[2],terceraEleccion[4],terceraEleccion[5])
-    }else if(eleccion==segundaEleccion[3]){
-        agregarDiv(nivelDos[3],terceraEleccion[6],terceraEleccion[7])
-    }else if(eleccion==segundaEleccion[4]){
-        agregarDiv(nivelDos[4],terceraEleccion[8],terceraEleccion[9])
-    }else if(eleccion==segundaEleccion[5]){
-        agregarDiv(nivelDos[5],terceraEleccion[10],terceraEleccion[11])
+    else if (estado ==1){
+        if(eleccion==segundaEleccion[0]){//segunda vez qeu se elige algo
+            agregarDiv(nivelDos[0],terceraEleccion[0],terceraEleccion[1]);
+            estado +=1;
+        }else if(eleccion==segundaEleccion[1]){
+            agregarDiv(nivelDos[1],terceraEleccion[2],terceraEleccion[3]);
+            estado +=1;
+        }else if(eleccion==segundaEleccion[2]){
+            agregarDiv(nivelDos[2],terceraEleccion[4],terceraEleccion[5]);
+            estado +=1;
+        }else if(eleccion==segundaEleccion[3]){
+            agregarDiv(nivelDos[3],terceraEleccion[6],terceraEleccion[7]);
+            estado +=1;
+        }else if(eleccion==segundaEleccion[4]){
+            agregarDiv(nivelDos[4],terceraEleccion[8],terceraEleccion[9]);
+            estado +=1;
+        }else if(eleccion==segundaEleccion[5]){
+            agregarDiv(nivelDos[5],terceraEleccion[10],terceraEleccion[11]);
+            estado +=1;
+        }
     }
 
-    else if(eleccion==terceraEleccion[0]){//tercera vez que se elige
-        finalHistoria(nivelTres[0])
-    }else if(eleccion==terceraEleccion[1]){
-        finalHistoria(nivelTres[1])
-    }else if(eleccion==terceraEleccion[2]){
-        finalHistoria(nivelTres[2])
-    }else if(eleccion==terceraEleccion[3]){
-        finalHistoria(nivelTres[3])
-    }else if(eleccion==terceraEleccion[4]){
-        finalHistoria(nivelTres[4])
-    }else if(eleccion==terceraEleccion[5]){
-        finalHistoria(nivelTres[5])
-    }else if(eleccion==terceraEleccion[6]){
-        finalHistoria(nivelTres[6])
-    }else if(eleccion==terceraEleccion[7]){
-        finalHistoria(nivelTres[7])
-    }else if(eleccion==terceraEleccion[8]){
-        finalHistoria(nivelTres[8])
-    }else if(eleccion==terceraEleccion[9]){
-        finalHistoria(nivelTres[9])
-    }else if(eleccion==terceraEleccion[10]){
-        finalHistoria(nivelTres[10])
-    }else if(eleccion==terceraEleccion[11]){
-        finalHistoria(nivelTres[11])
+    else if(estado==2){
+        if(eleccion==terceraEleccion[0]){//tercera vez que se elige
+            finalHistoria(nivelTres[0]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[1]){
+            finalHistoria(nivelTres[1]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[2]){
+            finalHistoria(nivelTres[2]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[3]){
+            finalHistoria(nivelTres[3]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[4]){
+            finalHistoria(nivelTres[4]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[5]){
+            finalHistoria(nivelTres[5]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[6]){
+            finalHistoria(nivelTres[6]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[7]){
+            finalHistoria(nivelTres[7]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[8]){
+            finalHistoria(nivelTres[8]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[9]){
+            finalHistoria(nivelTres[9]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[10]){
+            finalHistoria(nivelTres[10]);
+            estado +=1;
+        }else if(eleccion==terceraEleccion[11]){
+            finalHistoria(nivelTres[11]);
+            estado +=1;
+        }
     }
 }
 function agregarDiv(historia,opcion1,opcion2) {
