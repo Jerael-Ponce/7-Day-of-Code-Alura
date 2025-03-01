@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Day of Code D3</title>
+    <link rel="stylesheet" href="../styles/styleDay3.css">
 </head>
-<body>
-    <header> 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="day1.html">Day 1</a>
-            <a href="day2.html">Day 2</a>
-            <a href="day3.html">Day 3</a>
-            <a href="day4.html">Day 4</a>
-            <a href="day5.html">Day 5</a>
-            <a href="day6.html">Day 6</a>
-            <a href="day7.html">Day 7</a>
+<body class="body">
+    <header class="header"> 
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="day1.html" class="nav-link">Day 1</a>
+            <a href="day2.html" class="nav-link">Day 2</a>
+            <a href="day3.html" class="nav-link">Day 3</a>
+            <a href="day4.html" class="nav-link">Day 4</a>
+            <a href="day5.html" class="nav-link">Day 5</a>
+            <a href="day6.html" class="nav-link">Day 6</a>
+            <a href="day7.html" class="nav-link">Day 7</a>
         </nav>
     </header>
 
-    <main>
-        <H1>
-            Este es el espacio para el 3er reto del "7 Days of Dode " de Alura
-        </H1>
+    <main class="main">
+        <section class="section">
+            <h1 class="title">
+                3er Reto "7 Day's of code"
+            </h1>
 
-        <p>
-            ESPACIO EN CONSTRUCCION, ESPEREN ACTUALIZACION 
-        </p>
+            <p class="paragraph">
+                Para este día el objetivo es crear una historia de selección de eventos, en este caso específico, será de múltiples finales. ¡Espero la disfrutes!
+            </p>
+
+            <p class="paragraph">
+                Introducción:
+            </p>
+
+            <section class="story-container">
+                <div class="story-box">
+                    <p class="story-text">
+                        Un día cualquiera, recibes una notificación en tu teléfono: una empresa anuncia el lanzamiento de robots humanoides. Mientras continúas con tu rutina, escuchas en la radio sobre los avances acelerados de la inteligencia artificial. En el trabajo, tus compañeros comentan que sus puestos podrían ser reemplazados por chatbots, pero que se necesitan programadores en web, IA y robótica. De repente, tienes una epifanía: debes aprender a programar para transformar tu futuro. ¿Qué camino eliges?
+                    </p>
+                    <button type="button" class="button" onclick="botonSeleccion('Programar paginas web')">
+                        Programar páginas web
+                    </button>
+
+                    <button type="button" class="button" onclick="botonSeleccion('Programador de Inteligencia Artifical')">
+                        Programador de Inteligencia Artificial
+                    </button>
+
+                    <button type="button" class="button" onclick="botonSeleccion('Programador de Robots')">
+                        Programador de Robots
+                    </button>
+                </div>
+            </section>
+        </section>
     </main>
+
+    <footer class="footer">
+        <p class="footer-text">Lógica hecha por Jerael-Ponce, estilo hecho por ChatGPT - Diseño Ilustrado / Handmade</p>
+    </footer>
+
+    <script src="../scripts/scriptDay3.js" defer></script>
 </body>
 </html>
