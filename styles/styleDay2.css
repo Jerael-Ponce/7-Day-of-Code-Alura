@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 /* Variables globales */
 :root {
     --color-fondo: #121212;
@@ -11,7 +12,7 @@
     --color-alert-bg: #ff6347; /* Fondo del alert */
     --color-alert-text: #fff; /* Color del texto del alert */
     --color-secondary: #ff80e0; /* Color secundario para bordes del alert */
-    --fuente-principal: 'Press Start 2P', cursive;
+    --fuente-principal: 'Open Sans', sans-serif; 
 }
 
 /* Estilos generales */
