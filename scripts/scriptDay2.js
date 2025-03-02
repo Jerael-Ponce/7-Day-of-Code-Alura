@@ -66,12 +66,19 @@ function PrediccionPersonalidad() {
 function mostrarAlert(mensaje) {
     const alertDiv = document.createElement('div');
     alertDiv.classList.add('alert-style');
-    alertDiv.innerText = mensaje;
+    
+    const mensajeP = document.createElement('p');
+    mensajeP.innerText = mensaje;
+
+    const botonAceptar = document.createElement('button');
+    botonAceptar.innerText = 'Aceptar';
+    botonAceptar.classList.add('alert-button');
+    botonAceptar.addEventListener('click', () => {
+        alertDiv.remove();
+    });
+
+    alertDiv.appendChild(mensajeP);
+    alertDiv.appendChild(botonAceptar);
 
     document.body.appendChild(alertDiv);
-
-    // Eliminar el alert después de 5 segundos
-    setTimeout(() => {
-        alertDiv.remove();
-    }, 10000);
 }
