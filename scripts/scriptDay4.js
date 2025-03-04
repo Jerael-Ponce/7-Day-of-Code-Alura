@@ -4,6 +4,14 @@ let maximosIntentos = 3;
 let intentos = 0;
 let listaNumerosSorteados = [];
 
+function asignarTextoElemento(elemento,texto){
+    console.log(elemento);
+    document.getElementById("ParradoDinamico").innerText=texto;
+    //let elemtoHTML =document.querySelector(elemento);
+    //elemtoHTML.innerHTML = texto;
+    return;
+}
+
 
 function verificarIntento(){
     console.log(numeroSecreto);
